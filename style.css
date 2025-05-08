@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+
+.logo {
+  width: 180px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(15, 32, 39, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.menu a i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00e6e6;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #00e6e6;
+}
+
+body {
+  padding-top: 70px; /* espaço para o menu fixo */
+}
+/* Cabeçalho fixo com sombra */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00e6e6;
+}
+
+.subtitulo {
+  margin-bottom: 30px;
+  color: #cfcfcf;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Começa fora da tela */
+  width: 250px;
+  height: 100%;
+  background-color: #dddddd;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.3s ease; /* Certifique-se de que está ativo */
+}
+
+.side-menu.open {
+  right: 0; /* Desliza para dentro */
+}
+
+/* Conteúdo principal com espaço para o cabeçalho fixo */
+.container {
+  margin-top: 80px;
+}
+   
+
+
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.velocimetro-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+#start-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 50%;
+  background: url('bota0o-iniciar.png') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+#start-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#speedometer {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #3a6937;
+  z-index: 1;
+}
+
+.value {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.resultados {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.resultado  {
+  margin: 10px;
+}
+
+.resultado h2 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+
+.resultado p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.details {
+  margin: 10px;
+}
+
+#status {
+  margin: 10px;
+  color: #ccc;
+  font-size: 1.1em;
+}
