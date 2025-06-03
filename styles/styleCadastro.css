@@ -95,4 +95,9 @@ body {
     margin-top: 25px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.formCasdastro button:hover{
+    background-color: #9c3f05;
 }

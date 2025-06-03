@@ -142,7 +142,7 @@ h1 {
   height: 300px;
   border: none;
   border-radius: 50%;
-  background: url('bota0o-iniciar.png') center center no-repeat;
+  background: url('../Bota0o-iniciar.png') center center no-repeat;
   background-size: cover;
   cursor: pointer;
   z-index: 2;
