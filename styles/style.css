@@ -141,8 +141,10 @@ h1 {
   width: 300px;
   height: 300px;
   border: none;
+
   border-radius: 100%;
   background: url('/Assets/Botao-Iniciar.png') center center no-repeat;
+
   background-size: cover;
   cursor: pointer;
   z-index: 2;
