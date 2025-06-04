@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-  width: 180px;
+  width: 100px;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 20px 30px;
   z-index: 1000;
   box-shadow: 0 4px 10px #010e07;
 }
@@ -142,7 +142,7 @@ h1 {
   height: 300px;
   border: none;
   border-radius: 100%;
-  background: url('/Assets/Botao-Iniciar.png') center center no-repeat;
+  background: url('../Assets/Botao-Iniciar.png') center center no-repeat;
   background-size: cover;
   cursor: pointer;
   z-index: 2;
@@ -165,7 +165,7 @@ h1 {
 
 .value {
   font-size: 2em;
-  margin: 20px 0;
+  margin-top: 70px;
 }
 
 .resultados {
@@ -199,4 +199,26 @@ h1 {
   margin: 10px;
   color: #ffffff;
   font-size: 1.1em;
+}
+
+.hidden {
+  display: none !important; 
+}
+
+#reset-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #FF6B12;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+
+#reset-btn:hover {
+  background-color: #9c3f05;
 }

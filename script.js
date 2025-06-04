@@ -5,7 +5,9 @@ const pingElement = document.getElementById('ping');
 const uploadElement = document.getElementById('upload');
 const downloadElement = document.getElementById('download');
 const startBtn = document.getElementById('start-btn');
+const resetBtn = document.getElementById('reset-btn');
 const status = document.getElementById('status');
+
 
 let currentSpeed = 0;
 let targetSpeed = 0;
@@ -109,4 +111,38 @@ startBtn.addEventListener('click', async () => {
   await simulateDownload();
   await simulateUpload();
   status.textContent = "Teste concluído ✅";
+});
+
+// Mostra o botão resetar após o teste
+startBtn.addEventListener('click', async () => {
+  startBtn.classList.add('hidden');
+  resetBtn.classList.add('hidden'); // Garante que o botão reset esteja escondido no início
+  await new Promise(res => setTimeout(res, 500));
+
+  status.textContent = "Iniciando teste...";
+  drawSpeedometer(0);
+  await simulatePing();
+  await simulateDownload();
+  await simulateUpload();
+  status.textContent = "Teste concluído ✅";
+
+  // Agora mostra o botão resetar
+  resetBtn.classList.remove('hidden');
+});
+
+// Ação do botão resetar
+resetBtn.addEventListener('click', () => {
+  // Limpa os valores e estados
+  currentSpeed = 0;
+  targetSpeed = 0;
+  drawSpeedometer(0);
+  speedElement.textContent = '0';
+  pingElement.textContent = '-- ms';
+  downloadElement.textContent = '-- Mbps';
+  uploadElement.textContent = '-- Mbps';
+  status.textContent = 'Pronto para testar...';
+
+  // Esconde o botão resetar e mostra o botão iniciar
+  resetBtn.classList.add('hidden');
+  startBtn.classList.remove('hidden');
 });
