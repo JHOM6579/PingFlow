@@ -33,10 +33,8 @@ Este projeto foi desenvolvido como parte da disciplina de **Extensão em Redes**
 - Júlio Henrique de Oliveira Mendonça  
 - Luis Felipe Soares Matias  
 - Francisca Camilly Gomes de Oliveira  
-- Cibely Nóbrega Maia  
-- Rubem da Silva Freitas  
+- Cibely Nóbrega Maia   
 - José Roberto Gertrudes Monte Filho  
-- Guilherme de Abreu Alencar
 
 ---
 
