@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PingFlow - Teste de Velocidade</title>
 
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link
@@ -16,16 +16,18 @@
 <body>
   <header class="navbar">
     <div class="card">
-      <img src="./Assets/LogoPingFlow.png" alt="PingFlow Logo" class="logo" />
+
+      <img src="../Assets/LogoPingFlow.png" alt="PingFlow Logo" class="logo" />
+
     </div>
   
 
     <nav class="menu">
-      <a href="index.html">Início</a>
+      <a href="#">Início</a>
       <a href="#">Histórico</a>
       <a href="#">Apps</a>
-      <a href="#" title="Ajuda"><i class="fas fa-question-circle"></i></a>
-      <a href="Cadastro.html" title="Entrar" target="_blank"><i class="fas fa-user-circle"></i></a>
+      <a href="centralAjuda.html" title="Ajuda"><i class="fas fa-question-circle"></i></a>
+      <a href="cadastro.html" title="Entrar"><i class="fas fa-user-circle"></i></a>
     </nav>
 
   </header>
@@ -38,6 +40,7 @@
     <div class="velocimetro-wrapper">
       <button id="start-btn" title="Iniciar Teste"></button>
       <canvas id="speedometer" width="300" height="300" style="display: block;"></canvas>
+      <button id="reset-btn" class="hidden">Resertar</button> 
     </div>
   
     <div class="value"><span id="speed">0</span> Mbps</div>
@@ -47,7 +50,9 @@
         <h2>Ping</h2>
         <p id="ping">-- ms</p>
       </div>
-      <div class="resultado1">
+
+      <div class="resultado">
+
         <h2>Download</h2>
         <p id="download">-- Mbps</p>
       </div>
